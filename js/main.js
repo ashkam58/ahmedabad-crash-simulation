@@ -2,7 +2,9 @@
 
 
 import * as THREE from 'three';
-import { FBXLoader } from './FBXLoader.js'; // Assuming FBXLoader.js is in the js/ folder and is an ES module
+// Use the FBXLoader provided by the Three.js examples via the import map
+// This avoids missing local dependency errors when running the simulation
+import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
 
 
 // --- SCENE SETUP ---
