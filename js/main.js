@@ -37,6 +37,8 @@ loader.load(
         // FBX models can have very different scales. You WILL need to adjust this!
         // Start with a small value and increase it.
         plane.scale.set(0.05, 0.05, 0.05);
+        // Ensure the plane faces the direction of travel
+        plane.rotation.y = Math.PI;
         scene.add(plane);
         setupTimeline();
     },
