@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Flight 113 Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- NEW "IT JUST WORKS" IMPORT MAP -->
+    <!-- This tells the browser to get all three.js files directly from the internet -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="disclaimer" class="modal">
+        <h2>Educational Simulation: Flight 113</h2>
+        <p>This presentation is a simplified 3D reconstruction of the final moments of Indian Airlines Flight 113 on October 19, 1988. It is based on the official accident investigation report and is intended for educational purposes only, to illustrate the challenges of aviation in adverse weather conditions. This is a memorial to the lives lost, and we ask that you view it with respect and solemnity.</p>
+        <button id="agree-button">I Understand and Wish to Proceed</button>
+    </div>
+
+    <div id="simulation-container"></div>
+
+    <div id="ui-panel">
+        <h2 id="timeline-title">Final Approach of Flight 113</h2>
+        <p id="event-description">Loading simulation...</p>
+        <input type="range" id="timeline-slider" min="0" max="100" value="0" step="0.1">
+        <div id="camera-controls">
+            <button id="tower-cam">Tower View</button>
+            <button id="follow-cam">Follow Cam</button>
+            <button id="eyewitness-cam">Eyewitness View</button>
+        </div>
+    </div>
+
+    <!-- This is the only script tag you need in the body -->
+    <script type="module" src="js/main.js"></script> 
+</body>
+</html>

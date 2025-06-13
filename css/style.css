@@ -1,0 +1,7 @@
+/* Basic styling for the UI, disclaimer modal, etc. */
+body { margin: 0; font-family: sans-serif; background-color: #000; color: #fff; }
+#simulation-container { position: fixed; top: 0; left: 0; }
+#ui-panel { position: fixed; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.7); padding: 15px; border-radius: 10px; }
+#timeline-slider { width: 100%; }
+/* Style the disclaimer modal to cover the screen */
+/* .modal { ... }  */
